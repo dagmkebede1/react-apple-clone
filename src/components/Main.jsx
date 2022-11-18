@@ -33,15 +33,13 @@ function Main() {
 
       <section className="third-hightlight-wrapper">
         <div className="container">
-          <div className="title-wraper bold">iPhone 11 Pro</div>
+          <div className="title-wraper bold">iPhone 14</div>
 
-          <div className="description-wrapper">
-            Pro cameras. Pro display. Pro performance.
-          </div>
+          <div className="description-wrapper">Big and bigger</div>
 
-          <div className="price-wrapper">
+          {/* <div className="price-wrapper">
             From $24.95/mo. or $599 with trade‑in.
-          </div>
+          </div> */}
 
           <div className="links-wrapper">
             <ul>
@@ -61,10 +59,8 @@ function Main() {
           <div className="row">
             <div className="left-side-wrapper col-sm-12 col-md-6">
               <div className="left-side-container">
-                <div className="title-wraper">iPhone 11</div>
-                <div className="description-wraper">
-                  Just the right amount of everything.
-                </div>
+                <div className="title-wraper">iPhone 14 Pro</div>
+                <div className="description-wraper">Pro. Beyond</div>
                 <div className="price-wrapper">
                   From $18.70/mo. or $499 with trade‑in.<sup>1</sup>
                 </div>

@@ -2,13 +2,23 @@ import React from "react";
 import sixteen from "../commenResource/images/icons/16.png";
 import $ from "jquery";
 
-function toggleHandler(e) {
-  if (window.innerWidth < 700) {
-    e.target.classList.toggle("expanded");
-    let target = $(e.target.nextElementSibling);
-    target.slideToggle();
-  }
-}
+// function toggleHandler(e) {
+//   if (window.innerWidth < 700) {
+//     e.target.classList.toggle("expanded");
+//     let target = $(e.target.nextElementSibling);
+//     target.slideToggle();
+//   }
+// }
+$(document).on("click", ".footer-links-wrapper h3", function () {
+  if ($(window).width() <= 768) {
+    $(this).next("ul").slideToggle();
+    $(this).toggleClass("expanded");
+    console.log("screen width less than 768");
+  } else console.log("greater than 768");
+});
+$(window).on("resize", () => {
+  window.location.reload(false);
+});
 
 function Footer() {
   return (
@@ -61,10 +71,7 @@ function Footer() {
             </p>
           </div>
           <div className="footer-links-wrapper row">
-            <div
-              onClick={toggleHandler}
-              className="links-wrapper-1 col-sm-12 col-md"
-            >
+            <div className="links-wrapper-1 col-sm-12 col-md">
               <h3>Shop and Learn</h3>
               <ul>
                 <li>
@@ -102,10 +109,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div
-              onClick={toggleHandler}
-              className="links-wrapper-2 col-sm-12 col-md"
-            >
+            <div className="links-wrapper-2 col-sm-12 col-md">
               <h3>Services</h3>
               <ul>
                 <li>
@@ -140,10 +144,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div
-              onClick={toggleHandler}
-              className="links-wrapper-3 col-sm-12 col-md"
-            >
+            <div className="links-wrapper-3 col-sm-12 col-md">
               <h3>Apple Store</h3>
               <ul>
                 <li>
@@ -181,10 +182,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div
-              onClick={toggleHandler}
-              className="links-wrapper-4 col-sm-12 col-md"
-            >
+            <div className="links-wrapper-4 col-sm-12 col-md">
               <h3>For Business</h3>
               <ul>
                 <li>
@@ -225,10 +223,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div
-              onClick={toggleHandler}
-              className="links-wrapper-5 col-sm-12 col-md"
-            >
+            <div className="links-wrapper-5 col-sm-12 col-md">
               <h3>Apple Values</h3>
               <ul>
                 <li>
