@@ -404,7 +404,7 @@ img {
 
 	.footer-links-wrapper h3.expanded:after {
 		font-family: "FontAwesome";
-		content: "\f107";
+		content: "\f00d";
 		padding-left: 10px;
 		position: absolute;
 		right: 25px;
