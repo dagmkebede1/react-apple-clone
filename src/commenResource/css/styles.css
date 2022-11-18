@@ -400,6 +400,15 @@ img {
 		position: absolute;
 		right: 25px;
 	}
+
+	.footer-links-wrapper h3.expanded:after {
+		font-family: "FontAwesome";
+		content: "\f107";
+		padding-left: 10px;
+		position: absolute;
+		right: 25px;
+
+	}
 }
 
 @media (min-width: 768px) {

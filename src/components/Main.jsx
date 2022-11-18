@@ -1,4 +1,3 @@
-import React from "react";
 import appletv from "../commenResource/images/icons/apple-tv-logo.png";
 import banker from "../commenResource/images/home/banker.png";
 import watch5 from "../commenResource/images/icons/watch-series5-logo.png";
@@ -149,20 +148,20 @@ function Main() {
         </div>
       </section>
 
-      <section class="sixth-heghlight-wrapper">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="left-side-wrapper col-sm-12 col-md-6">
-              <div class="left-side-container">
-                <div class="top-logo-wrapper">
-                  <div class="logo-wrapper">
+      <section className="sixth-heghlight-wrapper">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="left-side-wrapper col-sm-12 col-md-6">
+              <div className="left-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
                     <img src={arcade} />
                   </div>
                 </div>
-                <div class="description-wraper white">
+                <div className="description-wraper white">
                   Agent 8 is a small hero on a big mission.
                 </div>
-                <div class="links-wrapper">
+                <div className="links-wrapper">
                   <ul>
                     <li>
                       <a href="">
@@ -176,14 +175,16 @@ function Main() {
                 </div>
               </div>
             </div>
-            <div class="right-side-wrapper col-sm-12 col-md-6">
-              <div class="right-side-container">
-                <div class="title-wraper">Apple Card Monthly Installments</div>
-                <div class="description-wraper">
+            <div className="right-side-wrapper col-sm-12 col-md-6">
+              <div className="right-side-container">
+                <div className="title-wraper">
+                  Apple Card Monthly Installments
+                </div>
+                <div className="description-wraper">
                   Pay for your next iPhone over time, interest-free with Apple
                   Card.
                 </div>
-                <div class="links-wrapper">
+                <div className="links-wrapper">
                   <ul>
                     <li>
                       <a href="">Learn more</a>

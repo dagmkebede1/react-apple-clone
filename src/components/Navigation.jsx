@@ -3,6 +3,8 @@ import logo from "../commenResource/images/icons/logo-sm.png";
 import search from "../commenResource/images/icons/search-icon-sm.png";
 import cart from "../commenResource/images/icons/cart-sm.png";
 
+import "../commenResource/js/bootstrap.js";
+
 function Navigation() {
   return (
     <div className="nav-wrapper fixed-top">
