@@ -3,44 +3,13 @@ import banker from "../../commenResource/images/home/banker.png";
 import watch5 from "../../commenResource/images/icons/watch-series5-logo.png";
 import arcade from "../../commenResource/images/icons/arcade.png";
 import InfoLink from "./InfoLink";
+import MainSection from "./MainSection";
+import { mainSecData } from "../assets/data/MainSectionData";
 
 function Main() {
   return (
     <>
-      <section className="second-hightlight-wrapper">
-        <div className="container">
-          <div className="new-alert">New</div>
-
-          <div className="title-wraper bold black">MacBook Air</div>
-
-          <div className="description-wrapper black">
-            Twice the speed. Twice the storage.
-          </div>
-
-          <div className="price-wrapper grey">From $999.</div>
-
-          <div className="links-wrapper">
-            <InfoLink />
-          </div>
-        </div>
-      </section>
-
-      <section className="third-hightlight-wrapper">
-        <div className="container">
-          <div className="title-wraper bold">iPhone 14</div>
-
-          <div className="description-wrapper">Big and bigger</div>
-
-          {/* <div className="price-wrapper">
-            From $24.95/mo. or $599 with trade‑in.
-          </div> */}
-
-          <div className="links-wrapper">
-            <InfoLink />
-          </div>
-        </div>
-      </section>
-
+      <MainSection data={mainSecData} />;
       <section className="fourth-heghlight-wrapper">
         <div className="container-fluid">
           <div className="row">
@@ -82,7 +51,6 @@ function Main() {
           </div>
         </div>
       </section>
-
       <section className="fifth-heghlight-wrapper">
         <div className="container-fluid">
           <div className="row">
@@ -130,7 +98,6 @@ function Main() {
           </div>
         </div>
       </section>
-
       <section className="sixth-heghlight-wrapper">
         <div className="container-fluid">
           <div className="row">

@@ -1,6 +1,6 @@
 import React from "react";
 import sixteen from "../../commenResource/images/icons/16.png";
-import $, { data } from "jquery";
+import $ from "jquery";
 import { footerData } from "../assets/data/FooterData";
 import FooterItems from "./FooterLink";
 
