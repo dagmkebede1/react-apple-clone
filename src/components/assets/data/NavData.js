@@ -1,5 +1,5 @@
-import search from "../commenResource/images/icons/search-icon-sm.png";
-import cart from "../commenResource/images/icons/cart-sm.png";
+import search from "../../../commenResource/images/icons/search-icon-sm.png";
+import cart from "../../../commenResource/images/icons/cart-sm.png";
 
 let NavData = [
   {

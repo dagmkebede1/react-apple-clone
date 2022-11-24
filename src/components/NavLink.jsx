@@ -10,7 +10,6 @@ export default class NavLink extends Component {
           ) : (
             <img src={this.props.link.img} />
           )}
-          {console.log(this.props.link)}
         </a>
       </li>
     );

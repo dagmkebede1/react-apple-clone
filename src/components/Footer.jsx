@@ -1,6 +1,8 @@
 import React from "react";
 import sixteen from "../commenResource/images/icons/16.png";
 import $ from "jquery";
+import { footerData } from "./assets/data/FooterData";
+import FooterItems from "./FooterLink";
 
 // function toggleHandler(e) {
 //   if (window.innerWidth < 700) {
@@ -9,6 +11,7 @@ import $ from "jquery";
 //     target.slideToggle();
 //   }
 // }
+
 $(document).on("click", ".footer-links-wrapper h3", function () {
   if ($(window).width() <= 768) {
     $(this).next("ul").slideToggle();
@@ -71,44 +74,23 @@ function Footer() {
             </p>
           </div>
           <div className="footer-links-wrapper row">
-            <div className="links-wrapper-1 col-sm-12 col-md">
-              <h3>Shop and Learn</h3>
-              <ul>
-                <li>
-                  <a href="#">Mac</a>
-                </li>
-                <li>
-                  <a href="#">iPad</a>
-                </li>
-                <li>
-                  <a href="#">iPhone</a>
-                </li>
-                <li>
-                  <a href="#">Watch</a>
-                </li>
-                <li>
-                  <a href="#">TV</a>
-                </li>
-                <li>
-                  <a href="#">Music</a>
-                </li>
-                <li>
-                  <a href="#">AirPods</a>
-                </li>
-                <li>
-                  <a href="#">HomePod</a>
-                </li>
-                <li>
-                  <a href="#">iPod touch</a>
-                </li>
-                <li>
-                  <a href="#">Accessories</a>
-                </li>
-                <li>
-                  <a href="#">Gift Cards</a>
-                </li>
-              </ul>
+            <div className="col-sm-12 col-md">
+              <FooterItems data={footerData.one} />
             </div>
+            <div className="col-sm-12 col-md">
+              <FooterItems data={footerData.two} />
+            </div>
+            <div className="col-sm-12 col-md">
+              <FooterItems data={footerData.three} />
+            </div>
+            <div className="col-sm-12 col-md">
+              <FooterItems data={footerData.four} />
+            </div>
+
+            <div className="col-sm-12 col-md">
+              <FooterItems data={footerData.five} />
+            </div>
+            {/* 
             <div className="links-wrapper-2 col-sm-12 col-md">
               <h3>Services</h3>
               <ul>
@@ -143,8 +125,8 @@ function Footer() {
                   <a href="#">iCloud.com</a>
                 </li>
               </ul>
-            </div>
-            <div className="links-wrapper-3 col-sm-12 col-md">
+            </div> */}
+            {/* <div className="links-wrapper-3 col-sm-12 col-md">
               <h3>Apple Store</h3>
               <ul>
                 <li>
@@ -266,41 +248,41 @@ function Footer() {
                   <a href="#">Apple Store App</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
-          <div className="my-apple-wrapper">
-            More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
-            <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+        </div>
+        <div className="my-apple-wrapper">
+          More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
+          <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+        </div>
+        <div className="copyright-wrapper row">
+          <div className="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
+            Copyright &copy; 2020 Apple Inc. All rights reserved.
           </div>
-          <div className="copyright-wrapper row">
-            <div className="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
-              Copyright &copy; 2020 Apple Inc. All rights reserved.
-            </div>
-            <div className="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
-              <ul>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Terms of Use</a>
-                </li>
-                <li>
-                  <a href="#">Sales and Refunds</a>
-                </li>
-                <li>
-                  <a href="#">Legal</a>
-                </li>
-                <li>
-                  <a href="#">Site Map</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
-              <div className="flag-wrapper">
-                <img src={sixteen} />
-              </div>{" "}
-              <div className="footer-country-name">United States</div>
-            </div>
+          <div className="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
+            <ul>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              <li>
+                <a href="#">Sales and Refunds</a>
+              </li>
+              <li>
+                <a href="#">Legal</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
+            <div className="flag-wrapper">
+              <img src={sixteen} />
+            </div>{" "}
+            <div className="footer-country-name">United States</div>
           </div>
         </div>
       </footer>
