@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../commenResource/images/icons/logo-sm.png";
+import logo from "../../commenResource/images/icons/logo-sm.png";
 
-import NavData from "./assets/data/NavData";
-import "../commenResource/js/bootstrap.js";
+import NavData from "../assets/data/NavData";
+import "../../commenResource/js/bootstrap.js";
 import NavLink from "./NavLink";
 
 function Navigation() {

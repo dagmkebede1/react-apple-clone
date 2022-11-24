@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 export default class FooterItems extends Component {
   render() {
-    console.log(this.props.data);
     return (
       <>
         {this.props.data.map((item) => {

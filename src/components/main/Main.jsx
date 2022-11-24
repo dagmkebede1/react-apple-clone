@@ -1,7 +1,8 @@
-import appletv from "../commenResource/images/icons/apple-tv-logo.png";
-import banker from "../commenResource/images/home/banker.png";
-import watch5 from "../commenResource/images/icons/watch-series5-logo.png";
-import arcade from "../commenResource/images/icons/arcade.png";
+import appletv from "../../commenResource/images/icons/apple-tv-logo.png";
+import banker from "../../commenResource/images/home/banker.png";
+import watch5 from "../../commenResource/images/icons/watch-series5-logo.png";
+import arcade from "../../commenResource/images/icons/arcade.png";
+import InfoLink from "./InfoLink";
 
 function Main() {
   return (
@@ -19,14 +20,7 @@ function Main() {
           <div className="price-wrapper grey">From $999.</div>
 
           <div className="links-wrapper">
-            <ul>
-              <li>
-                <a href="">Learn more</a>
-              </li>
-              <li>
-                <a href="">Buy</a>
-              </li>
-            </ul>
+            <InfoLink />
           </div>
         </div>
       </section>
@@ -42,14 +36,7 @@ function Main() {
           </div> */}
 
           <div className="links-wrapper">
-            <ul>
-              <li>
-                <a href="">Learn more</a>
-              </li>
-              <li>
-                <a href="">Buy</a>
-              </li>
-            </ul>
+            <InfoLink />
           </div>
         </div>
       </section>

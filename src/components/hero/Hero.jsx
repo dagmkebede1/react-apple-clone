@@ -1,4 +1,5 @@
 import React from "react";
+import InfoLink from "../main/InfoLink";
 
 function Hero() {
   return (
@@ -24,14 +25,7 @@ function Hero() {
           <div className="title-wraper bold black">iPad Pro</div>
 
           <div className="links-wrapper">
-            <ul>
-              <li>
-                <a href="">Learn more</a>
-              </li>
-              <li>
-                <a href="">Order</a>
-              </li>
-            </ul>
+            <InfoLink order="Order" />
           </div>
 
           <div className="ipod-caption row">
