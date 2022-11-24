@@ -1,6 +1,6 @@
 import React from "react";
 import sixteen from "../commenResource/images/icons/16.png";
-import $ from "jquery";
+import $, { data } from "jquery";
 import { footerData } from "./assets/data/FooterData";
 import FooterItems from "./FooterLink";
 
@@ -74,7 +74,17 @@ function Footer() {
             </p>
           </div>
           <div className="footer-links-wrapper row">
-            <div className="col-sm-12 col-md">
+            {footerData.map((data) => {
+              return (
+                <div className="col-sm-12 col-md">
+                  <FooterItems data={data.one} />
+                </div>
+              );
+            })}
+
+            {/* Duplicating your Components */}
+
+            {/* <div className="col-sm-12 col-md">
               <FooterItems data={footerData.one} />
             </div>
             <div className="col-sm-12 col-md">
@@ -89,9 +99,11 @@ function Footer() {
 
             <div className="col-sm-12 col-md">
               <FooterItems data={footerData.five} />
-            </div>
-            {/* 
-            <div className="links-wrapper-2 col-sm-12 col-md">
+            </div> */}
+
+            {/* Normal HTML Passing */}
+
+            {/* <div className="links-wrapper-2 col-sm-12 col-md">
               <h3>Services</h3>
               <ul>
                 <li>
@@ -125,8 +137,8 @@ function Footer() {
                   <a href="#">iCloud.com</a>
                 </li>
               </ul>
-            </div> */}
-            {/* <div className="links-wrapper-3 col-sm-12 col-md">
+            </div> 
+            <div className="links-wrapper-3 col-sm-12 col-md">
               <h3>Apple Store</h3>
               <ul>
                 <li>
@@ -248,7 +260,7 @@ function Footer() {
                   <a href="#">Apple Store App</a>
                 </li>
               </ul>
-            </div> */}
+            </div>  */}
           </div>
         </div>
         <div className="my-apple-wrapper">
